@@ -1,0 +1,194 @@
+/* Ogólne ustawienia */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Kontenery formularzy */
+.addCarForm, .editCarForm, .searchCar, .oneCar {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.oneCar, .searchCar {
+    background-color: #f9f9f9;
+}
+
+.oneCar {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+    .oneCar p {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+/* Formularze tabel */
+.addCarTable, .carDetailsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .addCarTable td, .carDetailsTable td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+
+    .carDetailsTable tr:last-child td {
+        border-bottom: none;
+    }
+
+    .addCarTable input, .addCarTable select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+/* Przycisk podstawowy */
+button, .addCarButton, .searchButton {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+    button:hover, .addCarButton:hover, .searchButton:hover {
+        background-color: #2980b9;
+        transform: scale(1.05);
+    }
+
+    button:active {
+        background-color: #1c5980;
+    }
+
+.addCarButton {
+    background-color: #27ae60;
+}
+
+    .addCarButton:hover {
+        background-color: #2ecc71;
+    }
+
+.editCarForm button:nth-child(2) {
+    background-color: #e74c3c;
+}
+
+    .editCarForm button:nth-child(2):hover {
+        background-color: #c0392b;
+    }
+
+/* Tabela wyœwietlania samochodów */
+.allCars table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.allCars th, .allCars td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.allCars th {
+    background-color: #3498db;
+    color: white;
+}
+
+.allCars tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.allCars tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Sekcja wyszukiwania */
+.searchCar {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+    .searchCar h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+.searchInputContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    width: 60%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+    .searchInput:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+.searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+}
+
+/* Nawigacja */
+.navbar {
+    background-color: #3498db;
+    padding: 10px;
+    text-align: center;
+}
+
+    .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar li {
+        display: inline;
+        margin: 0 15px;
+        color: white;
+        cursor: pointer;
+    }
+
+        .navbar li:hover, .navbar li.active {
+            text-decoration: underline;
+            font-weight: bold;
+        }
